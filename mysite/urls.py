@@ -18,6 +18,6 @@ from django.urls import path
 from firstbag import index
 
 urlpatterns = [
-    path('',index.index)
+    path('',index.index),
     path('admin/', admin.site.urls),
 ]
