@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from firstbag import index
+
+from firstbag import pages
 
 urlpatterns = [
-    path('',index.index),
+    path('', pages.index),
     path('admin/', admin.site.urls),
 ]
